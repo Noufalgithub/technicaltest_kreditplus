@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ListCardProductHorizontal extends StatelessWidget {
-  const ListCardProductHorizontal({
+class CardProductLandscape extends StatelessWidget {
+  const CardProductLandscape({
     Key? key,
     required this.image,
     required this.price,
@@ -58,7 +58,7 @@ class ListCardProductHorizontal extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(36)),
                   child: Text(
-                    'Rp. ' + '$price',
+                    '\$' + '$price',
                     style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -73,11 +73,11 @@ class ListCardProductHorizontal extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     '$title',
-                    style: const TextStyle(
-                        fontSize: 15, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     '$desc',
@@ -91,14 +91,14 @@ class ListCardProductHorizontal extends StatelessWidget {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.star,
                           color: Colors.amber,
                           size: 14,
                         ),
                         Text(
                           '$rate',
-                          style: const TextStyle(
+                          style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
                       ],
