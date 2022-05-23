@@ -46,7 +46,7 @@ class CardProductPotrait extends StatelessWidget {
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10)),
                   image: DecorationImage(
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                       image: NetworkImage(
                           '$image')),
                 ),
@@ -77,6 +77,8 @@ class CardProductPotrait extends StatelessWidget {
                 children: [
                   Text(
                     '$title',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.bold),

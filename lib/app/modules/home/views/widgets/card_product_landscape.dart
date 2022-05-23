@@ -48,7 +48,7 @@ class CardProductLandscape extends StatelessWidget {
                         topLeft: Radius.circular(10),
                         bottomLeft: Radius.circular(10)),
                     image: DecorationImage(
-                        fit: BoxFit.cover, image: NetworkImage('$image'))),
+                        fit: BoxFit.contain, image: NetworkImage('$image'))),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
@@ -77,6 +77,8 @@ class CardProductLandscape extends StatelessWidget {
                 children: [
                   Text(
                     '$title',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   Text(
