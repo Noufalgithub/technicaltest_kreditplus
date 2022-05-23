@@ -12,8 +12,8 @@
 
 ## Requirements to build the app
 
-- Android minimum
+- Android minimum lollipop
 
-# Instructions to build and deploy the app
+## Instructions to build and deploy the app
 
 - 
